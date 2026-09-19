@@ -1,17 +1,17 @@
-# @logsjar/express
+# @logsjar/expressjs
 
 Node.js SDK for Logsjar monitoring.
 
 ## Install
 
 ```bash
-npm install @logsjar/express
+npm install @logsjar/expressjs
 ```
 
 ## Basic usage
 
 ```ts
-import { Logsjar } from "@logsjar/express";
+import { Logsjar } from "@logsjar/expressjs";
 
 const logsjar = new Logsjar({
   apiKey: process.env.LOGSJAR_API_KEY!,
@@ -45,5 +45,3 @@ const logsjar = new Logsjar({
 
 logsjar.instrumentExpress(app);
 ```
-
-The `/v1/events` endpoint is a placeholder until the exact Logsjar backend API contract is wired in.
